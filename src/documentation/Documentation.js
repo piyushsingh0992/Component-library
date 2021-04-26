@@ -40,7 +40,7 @@ const Documentation = () => {
           code={{
             src:
               "https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=blackboard&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=153%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fmoonlight-1997.netlify.app%252FcomponentLibrary.css%2522%253E",
-            height: 110,
+            height: 120,
             width: 810,
           }}
         />
