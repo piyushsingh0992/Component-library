@@ -1,0 +1,22 @@
+@import "../src/documentation/components/navbar/navbar.css";
+@import "../src/documentation/components/actionButton/actionbutton.css";
+@import "../src/documentation/components/alert/alert.css";
+@import "../src/documentation/components/avatar/avatar.css";
+@import "../src/documentation/components/badge/badge.css";
+@import "../src/documentation/components/button/button.css";
+@import "../src/documentation/components/card/card.css";
+@import "../src/documentation/components/chip/chip.css";
+@import "../src/documentation/components/dropdown/dropDown.css";
+@import "../src/documentation/components/footer/footer.css";
+@import "../src/documentation/components/loader/loader.css";
+@import "../src/documentation/components/modal/modal.css";
+@import "../src/documentation/components/rating/rating.css";
+@import "../src/documentation/components/sidenav1/sidenav1.css";
+@import "../src/documentation/components/sidenav2/sideNav2.css";
+@import "../src/documentation/components/slider/slider.css";
+@import "../src/documentation/components/slideShow/slideShow.css";
+@import "../src/documentation/components/snackBar/snackBar.css";
+@import "../src/documentation/components/stepper/stepper.css";
+@import "../src/documentation/components/toggleButton/toggleButton.css";
+@import "../src/documentation/components/textField/textField.css";
+
