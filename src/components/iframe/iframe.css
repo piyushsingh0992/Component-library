@@ -1,0 +1,90 @@
+@import "../../index.css";
+
+.iframe {
+  border-radius: 5px;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: var(--dark-secondary);
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.responsive-btns {
+  padding: 0.5rem 0rem;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: 1px solid var(--dark-tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.responsive-btns > div {
+  position: relative;
+}
+
+.responsive-btns > div > span > img {
+  height: 2rem;
+  padding: 0rem 0.5rem;
+  cursor: pointer;
+}
+
+.desktop-bubble {
+  background-color: var(--white);
+  
+  color: var(--black);
+  font-size: 0.7rem;
+  width: 5.5rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 15px;
+  position: absolute;
+  right: 5.8rem;
+  display: none;
+}
+.desktop-icon:hover .desktop-bubble {
+  display: block;
+}
+.mobile-bubble {
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 0.7rem;
+  width: 5rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 15px;
+  position: absolute;
+  left: 5.5rem;
+  bottom: 0.7rem;
+  display: none;
+}
+
+.mobile-icon:hover .mobile-bubble {
+  display: block;
+}
+
+.iframe iframe {
+  margin: 1rem auto;
+}
+
+.desktop {
+  width: 650px;
+}
+
+.mobile {
+  width: 305px;
+}
+@media only screen and (max-width: 600px) {
+  .iframe {
+    width: 100%;
+  }
+  .responsive-btns {
+    display: none;
+  }
+
+  .desktop {
+    width: 200px;
+  }
+
+  .mobile {
+    width: 200px;
+  }
+}

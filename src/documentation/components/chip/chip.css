@@ -1,0 +1,51 @@
+
+@import "../../../index.css";
+.chip {
+  border-radius: 25px;
+  padding: 0.2rem 0.8rem;
+  background-color: var(--primary);
+  color: var(--primary-text);
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 10rem;
+  border: 2px solid var(--primary);
+  cursor: pointer;
+}
+
+.chip-primary {
+  background-color: var(--background);
+  color: var(--primary);
+  border: 2px solid var(--background);
+}
+
+.chip-secondary {
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.chip-warning {
+  background: #f77e7e;
+  border: 2px solid #f77e7e;
+  color: var(--red);
+}
+
+.chip-success {
+  background: #daf7a6;
+  border: 2px solid #daf7a6;
+  color: var(--green);
+}
+
+.chip-cancel {
+  height: 1.5rem;
+  margin-left: 0.8rem;
+  cursor: pointer;
+  transform: ease 2s;
+}
+
+.chip-cancel:hover {
+  transform: scale(1.35);
+}

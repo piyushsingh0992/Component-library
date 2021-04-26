@@ -1,0 +1,73 @@
+@import "../index.css";
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--dark-secondary);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-primary-text);
+}
+
+.documentation {
+  display: flex;
+  height: 100vh;
+
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+}
+
+
+
+.component-documentation {
+
+  
+  flex: 3;
+
+  background-color: var(--dark-background);
+
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 2vh 2rem;
+  height: 96vh;
+  width:100vw;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .documentation {
+    flex-direction: column;
+  }
+
+  .component-documentation {
+
+  
+    flex: 3;
+  
+    background-color: var(--dark-background);
+  
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 2vh 3vw;
+    margin:auto ;
+    height: 100vh;
+    width:94vw;
+  }
+}
+

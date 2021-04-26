@@ -1,0 +1,11 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+@import "../../../index.css";
+
+.checked {
+    color: var(--primary);
+  }
+  
+  
+  .card-rating {
+    margin: 0.1rem 0rem 0.2rem 0rem;
+  }

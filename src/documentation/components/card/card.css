@@ -1,0 +1,135 @@
+@import "../../../index.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+
+.checked {
+  color: var(--primary);
+}
+
+
+.card-rating {
+  margin: 0.1rem 0rem 0.2rem 0rem;
+}
+
+.card {
+  padding: 1.5rem 1.5rem;
+  background-color: var(--white);
+
+  width: 13rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 21rem;
+
+  box-shadow: 5px 10px 10px black;
+  position: relative;
+  border:1px solid #DCDCDC
+}
+.out-of-stock {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  text-align: center;
+}
+
+.out-of-stock > p {
+  padding-top: 8rem;
+  font-size: 2rem;
+  color: var(--primary);
+}
+.card-img-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  height: 12rem;
+
+  margin-bottom: 0.5rem;
+  border: 1px solid #e2ebef;
+  border-radius: 5px;
+}
+.card-add-to-wishlist {
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  cursor: pointer;
+}
+
+.card-description-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+}
+.card-heading {
+  color: var(--bold-text);
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: grey;
+  
+}
+.card-price-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0.5rem 0rem;
+}
+
+.card-new-price {
+  color: var(--bold-text);
+  font-size: 0.9rem;
+}
+
+.card-old-price {
+  text-decoration: line-through;
+  color: var(--primary-text);
+  margin: 0px 0.5rem;
+}
+
+.card-percentage-off {
+  color: green;
+}
+
+.card-btn-container {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+}
+
+
+
+/* styling buttons */
+
+.btn {
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border: 2.5px solid var(--primary);
+
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  border: 2.5px solid var(--secondary);
+  color: var(--secondary);
+  background-color: var(--white);
+}

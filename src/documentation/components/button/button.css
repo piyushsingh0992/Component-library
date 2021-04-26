@@ -1,0 +1,67 @@
+@import "../../../index.css";
+
+.BUTTON{
+   
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 800;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: var(--primary);
+    border: 2.5px solid var(--primary);
+  
+    color: var(--white);
+  }
+  
+  .btn-primary:hover {
+    border: 2.5px solid var(--secondary);
+    color: var(--secondary);
+    background-color: transparent;
+  }
+  
+  .btn-secondary {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background-color: transparent;
+  }
+  
+  .btn-secondary:hover {
+    border: 2px solid var(--primary);
+    color: var(--white);
+    background-color: var(--primary);
+  }
+  
+  .btn-warning {
+    background-color: transparent;
+    border: 2.5px solid var(--red);
+  
+    color: var(--red);
+  }
+  
+  .btn-warning:hover {
+    border: 2.5px solid var(--red);
+    color: var(--white);
+    background-color: var(--red);
+  }
+  
+  .btn-success {
+    background-color: transparent;
+    border: 2.5px solid var(--green);
+  
+    color: var(--green);
+  }
+  
+  .btn-success:hover {
+    border: 2.5px solid var(--green);
+    color: var(--white);
+    background-color: var(--green);
+  }
+  

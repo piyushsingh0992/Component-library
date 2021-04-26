@@ -1,0 +1,182 @@
+@import "../../../index.css";
+
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.customTrigger{
+  cursor: pointer;
+}
+.modal {
+  border: 0.35rem solid var(--primary);
+  background-color: var(--white);
+
+  /* height: 10rem; */
+
+  width: 35rem;
+  max-height: 30rem;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: relative;
+
+  border-radius: 15px;
+  overflow-y: scroll;
+}
+
+.modal-close-trigger {
+  height: 1rem;
+  width: 1rem;
+
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  cursor: pointer;
+}
+
+.modal::-webkit-scrollbar-track {
+  padding: 2px 0;
+  background-color: var(--white);
+}
+
+.modal::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--primary-text);
+}
+.modal-heading {
+  color: var(--bold-text);
+  word-wrap: break-word;
+  margin: 1rem 0rem;
+}
+
+.modal-heading > p {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.modal-content {
+  color: var(--primary-text);
+  word-wrap: break-word;
+  font-size: 1.5rem;
+
+  margin: 2rem 0rem;
+}
+
+.modal-btn-container {
+  display: flex;
+  justify-content: space-between;
+
+  width: 30%;
+  padding: 1rem;
+}
+.modal-hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal-show {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .modal {
+    border: 0.35rem solid var(--primary);
+    background-color: var(--white);
+
+    /* height: 10rem; */
+
+    width: 15rem;
+    max-height: 30rem;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: relative;
+
+    border-radius: 15px;
+    overflow-y: scroll;
+  }
+}
+
+/* styling button */
+
+.btn {
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border: 2.5px solid var(--primary);
+
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  border: 2.5px solid var(--secondary);
+  color: var(--secondary);
+  background-color: var(--white);
+}
+
+.btn-secondary {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  background-color: var(--white);
+}
+
+.btn-secondary:hover {
+  border: 2px solid var(--primary);
+  color: var(--white);
+  background-color: var(--primary);
+}
+
+.btn-warning {
+  background-color: transparent;
+  border: 2.5px solid var(--red);
+
+  color: var(--red);
+}
+
+.btn-warning:hover {
+  border: 2.5px solid var(--red);
+  color: var(--white);
+  background-color: var(--red);
+}
+
+.btn-success {
+  background-color: transparent;
+  border: 2.5px solid var(--green);
+
+  color: var(--green);
+}
+
+.btn-success:hover {
+  border: 2.5px solid var(--green);
+  color: var(--white);
+  background-color: var(--green);
+}

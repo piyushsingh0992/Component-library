@@ -1,0 +1,18 @@
+
+@import "index.css";
+
+@font-face {
+    src: url(fonts/Futura-Bold.otf);
+    font-family: heading;
+  }
+  
+
+  .app{
+      position: relative;
+      height: 100%;
+      width: 100vw;
+      overflow: hidden;
+  }
+  .hero {
+    font-family: heading;
+  }

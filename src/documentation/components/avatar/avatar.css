@@ -1,0 +1,50 @@
+@import "../../../index.css";
+
+.avatar{
+    background-color: var(--tertiary) ;
+    color:var(--primary-text);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;    
+}
+
+.avatar >img{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar>p{
+    color:var(--primary-text) !important;
+    margin:0px !important;
+}
+.avatar-small{
+    height:2rem;
+    width:2rem;
+    
+}
+
+.avatar-small>p{
+    font-size: 1.2rem !important;
+}
+
+.avatar-large{
+    height:2.5rem;
+    width:2.5rem;
+   
+}   
+
+
+.avatar-large >p{
+    font-size: 1.5rem !important;
+}
+.avatar-larger{
+    height:3.5rem;
+    width:3.5rem;
+    
+}
+
+.avatar-larger >p{
+    font-size: 2.5rem !important;
+}

@@ -1,0 +1,42 @@
+@import "../../../index.css";
+
+.floating-button {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    
+  
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .floating-icon {
+    height: 2rem;
+    width: 2rem;
+  }
+  
+  .action-top {
+    position: fixed;
+    top: 1.5rem;
+  }
+  
+  .action-left {
+    position: fixed;
+    left: 1.5rem;
+  }
+  
+  .action-bottom {
+    position: fixed;
+    bottom: 1.5rem;
+  }
+  
+  .action-right {
+    position: fixed;
+    right: 1.5rem;
+  }
+  

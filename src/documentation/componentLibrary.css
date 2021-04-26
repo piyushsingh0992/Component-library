@@ -1,0 +1,22 @@
+@import "./components/navbar/navbar.css";
+@import "./components/actionButton/actionbutton.css";
+@import "./components/alert/alert.css";
+@import "./components/avatar/avatar.css";
+@import "./components/badge/badge.css";
+@import "./components/button/button.css";
+@import "./components/card/card.css";
+@import "./components/chip/chip.css";
+@import "./components/dropdown/dropDown.css";
+@import "./components/footer/footer.css";
+@import "./components/loader/loader.css";
+@import "./components/modal/modal.css";
+@import "./components/rating/rating.css";
+@import "./components/sidenav1/sidenav1.css";
+@import "./components/sidenav2/sideNav2.css";
+@import "./components/slider/slider.css";
+@import "./components/slideShow/slideShow.css";
+@import "./components/snackBar/snackBar.css";
+@import "./components/stepper/stepper.css";
+@import "./components/toggleButton/toggleButton.css";
+@import "./components/textField/textField.css";
+
