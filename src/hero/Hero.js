@@ -43,7 +43,7 @@ const Hero = () => {
           <Link to="/Documentation">
             <button className="intro-btn intro-primary">Documentation</button>
           </Link>
-          <a href="https://github.com/piyushsingh0992/Component-library" target="_blank">
+          <a href="https://github.com/piyushsingh0992/Component-library/tree/initial-commit" target="_blank">
           <button className="intro-btn intro-secondary">GitHub</button>
           </a>
         </div>

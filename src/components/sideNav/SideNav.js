@@ -59,7 +59,7 @@ const SideNav = () => {
             </div>
           </Link>
           <a
-            href="https://github.com/piyushsingh0992/Component-library"
+            href="https://github.com/piyushsingh0992/Component-library/tree/initial-commit"
             target="_blank"
           >
             <div className="sidenav-route">
