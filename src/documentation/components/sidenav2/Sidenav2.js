@@ -6,7 +6,6 @@ import search from "./images/search.svg";
 const Sidenav2 = ({ optionArray, routeArray, brand }) => {
   const [mobileView, mobileViewSetter] = useState(true);
 
-  console.log("optionArray->", optionArray);
 
   window.onclick = function (event) {
     var sidenav2 = document.querySelector(".sidenav2");

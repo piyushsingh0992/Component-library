@@ -8,7 +8,7 @@ const TextField = ({ label, type }) => {
     valueSetter(e.target.value);
     if (e.target.value.length > 0) {
       emptySetter(false);
-      console.log("length ->", e.target.value.length);
+
     } else {
       emptySetter(true);
     }

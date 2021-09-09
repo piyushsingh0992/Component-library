@@ -3,7 +3,7 @@ import "./component.css";
 import Iframe from "../iframe/Iframe.js";
 import CodeSandBox from "../codeSandbox/CodeSandBox.js";
 const Component = ({ id, name, desc, preview, iframe,children, sandBox, code }) => {
-  console.log(`${name} preview ->`,preview)
+
   return (
     <div className="component" id={id}>
       <div className="component-heading">

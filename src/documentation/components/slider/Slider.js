@@ -7,7 +7,7 @@ const Slider = ({ min, max }) => {
     valueSetter(e.target.value);
   }
 
-  console.log(value);
+
   return (
     <input
       type="range"

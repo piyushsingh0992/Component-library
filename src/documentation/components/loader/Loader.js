@@ -1,7 +1,6 @@
 import React from "react";
 import "./loader.css";
 const Loader = ({ size }) => {
-    console.log('size->',size);
     
   let dimension = size
     ? {

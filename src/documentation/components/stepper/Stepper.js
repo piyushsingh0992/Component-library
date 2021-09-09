@@ -6,7 +6,6 @@ import check from "./images/check.svg";
 import Button from "../button/Button.js";
 
 const Stepper = ({ taskArray }) => {
-  console.log("entered stepper");
   const [task, taskSetter] = useState(0);
   const [newtaskArray, newtaskArraySetter] = useState(
     taskArray?.map((item) => {
@@ -34,20 +33,20 @@ const Stepper = ({ taskArray }) => {
   }
 
   function taskHandler2() {
-    console.log("back->", task);
+
     if (task < 0) {
       return;
     }
-    console.log("back");
+
     taskSetter((value) => value - 1);
 
     newtaskArraySetter(
       newtaskArray?.map((item, index) => {
         if (index === task - 1) {
-          console.log("entered if");
+
           return { ...item, done: false };
         } else {
-          console.log("entered else");
+
           return item;
         }
       })

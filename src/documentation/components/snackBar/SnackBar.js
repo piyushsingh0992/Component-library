@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import "./snackBar.css";
 import cross from "./images/close.svg";
 const SnackBar = ({ text, triggerText, triggerElement }) => {
-  console.log(
-    `entered text=${text}, triggerText=${triggerText}, triggerElement=${triggerElement}`
-  );
+
   const [trigger, triggerHandler] = useState(false);
   function clickHandler() {
     triggerHandler((value) => !value);

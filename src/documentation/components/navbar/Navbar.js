@@ -10,7 +10,7 @@ const Navbar = ({ brandImg,item1, item2, login }) => {
 
   function phoneViewHandler() {
     phoneViewSetter((value) => !value);
-    console.log("clicked");
+  
   }
 
   function item1ClickHandler() {
