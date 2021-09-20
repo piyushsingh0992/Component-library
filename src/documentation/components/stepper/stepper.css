@@ -1,0 +1,129 @@
+@import "../../../index.css";
+
+.stepper {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+
+  align-items: flex-start;
+}
+
+.stepper-main-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 50rem;
+  margin-bottom: 5rem;
+}
+
+.stepper-task-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.stepper-task-connector-container {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.stepper-icon {
+  color: var(--primary-text);
+  background-color: var(--tertiary);
+  padding: 1.2rem 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  font-size: 1.9rem;
+}
+
+.stepper-icon-done {
+  color: var(--primary-text);
+  background-color: var(--primary);
+  padding: 0.8rem 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.steper-check-icon {
+  height: 1.9rem;
+  width: 1.9rem;
+}
+
+.stepper-task-connector {
+  width: 10rem;
+  height: 0.1rem;
+  background-color: var(--primary-text);
+}
+
+.stepper-text {
+  font-size: 1.5rem;
+  color: var(--bold-text);
+}
+
+.stepper-text-done {
+  font-size: 1.5rem;
+  color: var(--white);
+}
+.stepper-button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+
+
+.stepper-done-indicator {
+  color: var(--primary);
+}
+
+@media only screen and (max-width: 600px) {
+    .stepper-task-connector {
+      width: 2rem;
+    }
+    .stepper-button-container {
+      width: 100%;
+    }
+  }
+/* styling the buttons */
+
+.btn {
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border: 2.5px solid var(--primary);
+
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  border: 2.5px solid var(--secondary);
+  color: var(--secondary);
+  background-color: transparent;
+}
+
+.btn-secondary {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  background-color: transparent;
+}
+
+.btn-secondary:hover {
+  border: 2px solid var(--primary);
+  color: var(--white);
+  background-color: var(--primary);
+}

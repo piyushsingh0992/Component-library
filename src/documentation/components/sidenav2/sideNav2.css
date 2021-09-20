@@ -1,0 +1,276 @@
+:root {
+  --primary: #ff6600;
+  --secondary: #ff771f;
+  --tertiary: #ff8c3c;
+  --background: #ffaf7a;
+  --primary-text: #000;
+  --bold-text: #000;
+
+  --dark-primary: #121212;
+  --dark-secondary: #404040;
+  --dark-tertiary: #282828;
+
+  --dark-background: #282828;
+  --dark-primary-text: #b3b3b3;
+  --dark-bold-text: #ffffff;
+
+  --white: #ffffff;
+  --black: #000;
+  --red: red;
+  --green: green;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+.sidenav2 {
+  position: sticky;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 98vh;
+
+  background-color: var(--primary);
+  padding: 1vh 0vh;
+  z-index: 1;
+  width: 13rem;
+  overflow: hidden;
+}
+
+.sidenav2-heading {
+  font-size: 1.8rem;
+  padding: 1rem 0rem 1rem 1rem;
+  color: var(--white);
+  cursor: pointer;
+}
+.sidenav2-brand-icon {
+  height: 3rem;
+  object-fit: contain;
+  max-width: 10vw;
+  padding-left: 1rem;
+}
+
+.sidenav2-search-bar {
+  background-color: var(--white);
+  padding: 0.4rem 0.5rem;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  width: 9rem;
+  margin-left: 1rem;
+}
+
+.sidenav2-search-icon {
+  height: 1.2rem;
+  width: 1.2rem;
+  padding-right: 0.5rem;
+}
+
+input.sidenav2-search-input {
+  font-size: 1rem;
+  width: 7rem;
+  border: none;
+  outline: none;
+}
+
+.sidenav2-routes {
+  margin: 1rem 0rem;
+}
+
+.sidenav2-route {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.sidenav2-route:hover {
+  background-color: var(--tertiary);
+}
+
+.sidenav2-route > a {
+  font-size: 1.3rem;
+  color: var(--white);
+}
+
+.sidenav2-route:hover > a {
+  color: var(--primary-text);
+}
+
+.sidenav2-dropdown-burger-icon {
+  height: 2.5rem;
+  object-fit: contain;
+  cursor: pointer;
+  display: none;
+}
+
+.sidenav2-options-container {
+  padding: 1rem 0rem 3rem 0rem;
+
+  height: 52vh;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transition: 1s ease-in-out;
+  background-color: var(--primary);
+  width: 13rem;
+}
+
+.sidenav2-option {
+  padding: 0.5rem 0.1rem 0.5rem 1rem;
+  margin: 0.1rem;
+  cursor: pointer;
+  border-radius: 5px;
+
+  /* width: 11.5rem; */
+  display: block;
+  color: var(--white);
+  font-size: 0.9rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.sidenav2-option:hover {
+  background-color: var(--secondary);
+  color: var(--bold-text);
+}
+
+.sidenav2 ::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.sidenav2 ::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+.sidenav2 ::-webkit-scrollbar-thumb {
+  background: var(--dark-secondary);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.sidenav2 ::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-primary-text);
+}
+
+@media only screen and (max-width: 600px) {
+  .sidenav2 {
+    position: sticky;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: var(--primary);
+    height: 10vw;
+    min-width: 95vw;
+    
+    padding: 0.5vw 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    overflow: hidden;
+    /* overflow: scroll; */
+  }
+
+  .sidenav2-heading {
+    font-size: 1.5rem;
+    padding: 0;
+  }
+
+  .sidenav2-brand-icon {
+    height: 3rem;
+    object-fit: contain;
+    max-width: 10vw;
+    padding: 1;
+    padding-left: 0rem;
+  }
+
+  .sidenav2-search-bar {
+    display: none;
+  }
+
+  .side-mobile-view-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .sidenav2-routes {
+    margin: 0rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sidenav2-route {
+    /* background-color: green; */
+    padding: 0rem 0.5rem;
+    cursor: pointer;
+
+    transition: all 0.5s ease;
+
+    font-size: 1rem;
+    color: var(--primary-text);
+  }
+
+  .sidenav2-route > a {
+    color: var(--white);
+  }
+
+  .sidenav2-dropdown-burger-icon {
+    height: 1.8rem;
+    object-fit: contain;
+    display: block;
+
+  }
+ 
+
+
+  .sidenav2-options-container {
+    padding: 3rem 0rem 3rem 0rem;
+    background-color: transparent;
+    /* background-color: yellow; */
+    height: 86vh;
+    width: 50vw;
+    overflow: scroll;
+    overflow-x: hidden;
+    position: relative;
+    position: fixed;
+    top: 0vh;
+    right: 0;
+    bottom: 0;
+
+    font-size: 4vw;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidenav2-option {
+    padding: 0.5rem 1rem;
+    color: var(--white);
+    width: 100%;
+    border-radius: 0px;
+    background-color: var(--secondary);
+  }
+
+  .sidenav2-option-color {
+    background-color: var(--tertiary);
+  }
+
+  .sidenav2-options-container-hide {
+    transform: translateX(60vw);
+
+    opacity: 0;
+  }
+
+  .sidenav2-options-container-show {
+    transform: translateX(0vw);
+
+    opacity: 1;
+  }
+}

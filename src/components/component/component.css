@@ -1,0 +1,64 @@
+.component{
+    width:100%;
+    margin:1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: inline-block;
+  }
+  
+  .component  .component-heading{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:1rem;
+  }
+  .component h1{
+    
+    color:var(--dark-bold-text);
+    font-size: 1.6rem;
+  }
+  
+  .component >p{
+  
+    color:var(--dark-primary-text);
+    font-size: 1.2rem;
+    margin-bottom:1rem;
+  }
+  
+  .code{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+
+  .component-preview{
+    border-radius: 5px;
+    padding: 3rem 1rem;
+    background-color: var(--dark-secondary);
+    width: 90%;
+    margin:auto;
+  
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: 2rem auto;
+  }
+  @media only screen and (max-width: 600px) {
+    
+    
+    .component h1{
+      font-size:1.3rem;
+    }
+    
+    .component p{
+      font-size:1rem;
+    }
+  }
+  

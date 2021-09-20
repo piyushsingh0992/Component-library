@@ -1,0 +1,179 @@
+@import "../index.css";
+
+  
+  
+  body {
+    font-family: heading;
+  }
+  .hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .stars {
+    background: black
+      url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+  }
+  
+  .twinkling {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    animation: twinkling 1s infinite linear;
+  }
+  
+  @keyframes twinkling {
+    from {
+        transform: translateX(0vw);
+      }
+      to {
+        transform: translateX(10vw);
+      }
+  }
+  
+  .clouds {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 3;
+    animation: clouds1 20s infinite linear;
+  }
+  
+  @keyframes clouds1 {
+    from {
+      transform: translateX(-60vw);
+    }
+    to {
+      transform: translateX(100vw);
+    }
+  }
+  
+  .moon {
+    height: 32.5vw;
+    object-fit: contain;
+    position: absolute;
+    top: 4vw;
+    right: 1vw;
+    z-index: 2;
+  
+    background-attachment: fixed;
+  
+  
+  }
+
+  .hero-heading{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-heading >h1{
+      font-size:4rem;
+    }
+  
+  .moonIcon{
+    height:5rem;
+    padding: 0rem 1rem;
+  }  
+  
+  @media only screen and (max-width: 660px) {
+    
+    .hero-heading{
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-heading >h1{
+        font-size:2.5rem;
+      }
+    
+    .moonIcon{
+      height:3rem;
+      padding: 0rem 1rem;
+    }  
+    
+    .clouds {
+      display: none;
+    }
+  
+    .twinkling {
+      animation: twinkling 3s infinite linear;
+    }
+  }
+  
+  .intro {
+    height:100vh;
+    width:100vw;
+    position: absolute;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:var(--white);
+    background-color: rgba(0,0,0,0.1);
+  }
+
+
+  .intro-info{
+
+      max-width: 40rem;
+      text-align: center;
+      margin:3rem;
+  }
+  
+.intro >.intro-info>p{
+    font-size: 1.5rem;
+      
+}
+
+
+.intro-box-container{
+
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+}
+
+.intro-btn{
+    font-size:1rem;
+    padding:0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    border:3px solid var(--white);
+    cursor: pointer;
+}
+
+.intro-primary{
+    background-color: var(--white);
+    color:black;
+}
+
+.intro-primary:hover{
+    background-color: transparent;
+    color:var(--white);
+}
+.intro-secondary{
+    background-color: transparent;
+    color:var(--white);
+}
+
+.intro-secondary:hover{
+    background-color: var(--white);
+    color:black;
+}

@@ -1,0 +1,32 @@
+@import "../../../index.css";
+
+.slider {
+  -webkit-appearance: none;
+  width: 10rem;
+  height: 10px;
+  border-radius: 5px;
+  background: var(--primary);
+
+  outline: none;
+
+  -webkit-transition: 0.2s;
+  transition: all 0.2s ease-in;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 35px;
+  height: 35px;
+  border: 0;
+  background: url("images/dog.svg");
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 35px;
+  height: 35px;
+  border: 0;
+  background: url("images/dog.svg");
+  cursor: pointer;
+}

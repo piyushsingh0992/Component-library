@@ -1,0 +1,13 @@
+@import "../../../index.css";
+
+.loader {
+    border: 0.7rem solid var( --white ); /* Light grey */
+    border-top: 0.7rem solid var(--primary); /* Blue */
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

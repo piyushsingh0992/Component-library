@@ -1,0 +1,31 @@
+.slideshow{
+    position: relative;
+    width: 100%;
+}
+
+.banner{
+    width: 100%;
+    padding:0px 0.1% ;
+    height:70vh;
+    animation: visible 0.3s; 
+}
+
+@keyframes visible {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+   }
+
+@media only screen and (max-width: 600px){
+    .banner{
+        top:0;
+        height:21vh;
+        object-fit: contain;
+    }  
+    
+
+   
+}
